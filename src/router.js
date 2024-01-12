@@ -5,6 +5,9 @@ const router=express.Router();
 router.get('/',(req,res)=>{
    res.send("Server is ruuning REST API")
 })
+router.get('/api',(req,res)=>{
+   res.send("Server is ruuning REST API")
+})
 router.post('/create',(req,res)=>{
    product.add(req,res);
 
