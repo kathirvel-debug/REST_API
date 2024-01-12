@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-const url = 'mongodb://0.0.0.0:27017/skilltest';
+const url = 'mongodb://localhost/skilltest';
 const connectUsingMongoose = async()=>{
     try{
         await mongoose.connect(url, {
