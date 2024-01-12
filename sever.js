@@ -6,7 +6,7 @@ var postmanUrl='https://www.postman.com/postman/workspace/postman-public-workspa
 sever.use(express.json())
 sever.use('/api/ecom',router);
 sever.get('/',(req,res)=>{
-    res.send("Sever is Running Explore REST API IN Postman: ${postmanUrl}");
+    res.send("Sever is Running Explore REST API IN Postman:",postmanUrl);
 })
 sever.listen(8005,()=>{
     console.log("sever is running");
