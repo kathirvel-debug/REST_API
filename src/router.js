@@ -3,7 +3,7 @@ import productController from "./productController.js";
 const product=new productController();
 const router=express.Router();
 router.get('/',(req,res)=>{
-   res.send("Server is ruuning REST API")
+   res.send("Server is runing REST API")
 })
 router.get('/api',(req,res)=>{
    res.send("Server is ruuning REST API")
