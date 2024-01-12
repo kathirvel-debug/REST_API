@@ -6,6 +6,9 @@ router.post('/create',(req,res)=>{
    product.add(req,res);
 
 })
+router.get('/',(req,res)=>{
+   res.send("Server is ruuning REST API")
+})
 router.get('/products',(req,res)=>{
 product.getproduct(req,res);
 })
